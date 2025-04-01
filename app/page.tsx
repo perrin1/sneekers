@@ -1,16 +1,22 @@
-import { getAuthSession } from "@/lib/auth";
-
+// import { getAuthSession } from "@/lib/auth";
+import { HeroSection } from "@/src/feature/layout/HeroSection";
+import { AboutSection } from "@/src/feature/layout/AboutSection";
+import { Categorie } from "@/src/feature/layout/Categorie";
+import { NewCarousel } from "@/src/feature/layout/NewCarousel";
 
 export default async function Home() {
 
-  const session = await getAuthSession();
+  // const session = await getAuthSession();
   
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-     <h1>
-      {JSON.stringify(session,null,2)}
-     </h1>
-     <h1>hello</h1>
+    <div className="">
+     {/* <h1> */}
+      {/* {JSON.stringify(session,null,2)} */}
+     {/* </h1> */}
+     <HeroSection />
+            <AboutSection />
+            <Categorie />
+            <NewCarousel />
     </div>
   );
 }

@@ -12,8 +12,8 @@ export const Header = async () => {
   const session = await getAuthSession();
 
   return (
-    <header className="border-b bordder-b-accent py-4 sticky top-0 z-50">
-      <div className="container flex items-center justify-between  max-w-[80%] m-auto gap-1">
+    <header className="border-b bg-yellow-50 dark:bg-background bordder-b-accent py-4 sticky top-0 z-50">
+      <div className="md:container grid  grid-col-3  md:flex items-center md:justify-between  max-w-[80%] m-auto gap-1">
         <h1 className="text-2xl font-bold mr-4">SneeKers</h1>
         <div>
           <nav className="flex gap-4">

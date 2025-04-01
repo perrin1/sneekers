@@ -16,7 +16,7 @@ export const Footer = () => {
           <div className="mb-4 md:mb-0">
             <Link href="/">
               <span className="text-xl font-bold tracking-wide cursor-pointer">
-                MonSite
+              SneeKers
               </span>
             </Link>
           </div>
